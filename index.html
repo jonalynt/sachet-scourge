@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachet Scourge</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>Sachet Scourge</h1>
+                <span class="nav-subtitle">Philippines Plastic Crisis</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#definition" class="nav-link">Definition</a>
+                <a href="#causes" class="nav-link">Causes</a>
+                <a href="#status" class="nav-link">Current Status</a>
+                <a href="#effects" class="nav-link">Effects</a>
+                <a href="#solutions" class="nav-link">Solutions</a>
+                <a href="#success" class="nav-link">Success Stories</a>
+                <a href="#action" class="nav-link">Take Action</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Sachet Scourge</h1>
+            <h2 class="hero-subtitle">Understanding the Single-Use Plastic Crisis in the Philippines</h2>
+            <p class="hero-description">Every day, 163 million plastic sachets flood the Philippines. It's time to understand and act on this environmental crisis.</p>
+            <a href="#definition" class="btn btn--primary btn--lg">Explore the Crisis</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number" data-target="163">0</span>
+                <span class="stat-label">Million sachets daily</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="20">0</span>
+                <span class="stat-label">% ends up in ocean</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="95">0</span>
+                <span class="stat-label">% increase by 2040</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Definition Section -->
+    <section class="section definition" id="definition">
+        <div class="container">
+            <div class="section-header">
+                <h2>What are Single-Use Plastics?</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="definition-content">
+                <div class="definition-text">
+                    <p class="definition-main">Single-use plastics (SUPs) are products that are used only once before being thrown away, leading to significant environmental pollution. In the Philippines, sachets are the most common form of SUPs, used for everything from shampoo to coffee.</p>
+                    <div class="definition-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">📦</span>
+                            <span>Sachets for everyday products</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">♻️</span>
+                            <span>Used once, pollutes forever</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🌊</span>
+                            <span>Major ocean pollutant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="definition-visual">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1761062185/pplx_project_search_images/d94c37d97ec60bf1751cf65bc687a843814348a9.png" alt="Collection of plastic sachets showing various brands and products" class="definition-image">
+                    <p class="image-caption">A typical collection of plastic sachets used daily in Filipino households</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Causes Section -->
+    <section class="section causes" id="causes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why is this happening?</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="causes-grid">
+                <div class="cause-card" data-cause="poverty">
+                    <div class="cause-icon">💰</div>
+                    <h3>Sachet Economy &amp; Poverty</h3>
+                    <p>Widespread use of sachet economy due to poverty - people buy small quantities they can afford</p>
+                    <div class="cause-details">
+                        <ul>
+                            <li>Low-income families prefer affordable small portions</li>
+                            <li>Sachets cost less upfront than bulk purchases</li>
+                            <li>Limited storage space in urban poor communities</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cause-card" data-cause="infrastructure">
+                    <div class="cause-icon">🏗️</div>
+                    <h3>Poor Infrastructure</h3>
+                    <p>Inadequate waste management infrastructure and poor law enforcement</p>
+                    <div class="cause-details">
+                        <ul>
+                            <li>Insufficient waste collection systems</li>
+                            <li>Limited recycling facilities</li>
+                            <li>Weak enforcement of environmental laws</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cause-card" data-cause="awareness">
+                    <div class="cause-icon">📚</div>
+                    <h3>Lack of Awareness</h3>
+                    <p>Limited public awareness regarding proper waste segregation and environmental impact</p>
+                    <div class="cause-details">
+                        <ul>
+                            <li>Poor understanding of environmental consequences</li>
+                            <li>Inadequate education on waste segregation</li>
+                            <li>Limited access to sustainable alternatives</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Status Section -->
+    <section class="section current-status" id="status">
+        <div class="container">
+            <div class="section-header">
+                <h2>Current Crisis Scale</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="status-content">
+                <div class="status-stats">
+                    <div class="stat-card">
+                        <div class="stat-visual">
+                            <span class="stat-big-number" data-count="163">163</span>
+                            <span class="stat-unit">million</span>
+                        </div>
+                        <h3>sachets used daily in Philippines</h3>
+                        <p>Every single day, Filipinos consume 163 million plastic sachets</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-visual">
+                            <span class="stat-big-number" data-count="20">20</span>
+                            <span class="stat-unit">%</span>
+                        </div>
+                        <h3>of plastic waste ends up in ocean</h3>
+                        <p>One-fifth of all plastic waste generated finds its way into marine environments</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-visual">
+                            <span class="stat-big-number" data-count="2040">2040</span>
+                            <span class="stat-unit">year</span>
+                        </div>
+                        <h3>waste could nearly double</h3>
+                        <p>Without action, mismanaged plastic waste could increase by 95% by 2040</p>
+                    </div>
+                </div>
+                
+                <div class="charts-section">
+                    <h3>Quantitative Analysis</h3>
+                    <div class="charts-grid">
+                        <div class="chart-container">
+                            <h4>Daily Sachet Consumption</h4>
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/1c43476d6f565c2371aa07ac52d49b3d/2a2c456a-cc0d-411f-beab-0c0bd7ccea10/2c5673b4.png" alt="Daily sachet usage chart showing 163 million sachets consumed daily" class="chart-image">
+                        </div>
+                        <div class="chart-container">
+                            <h4>Plastic Waste Distribution</h4>
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/1c43476d6f565c2371aa07ac52d49b3d/8e252332-93b6-4cd8-9430-3b0195c544db/12b84c69.png" alt="Pie chart showing 20% of plastic waste ends up in ocean" class="chart-image">
+                        </div>
+                        <div class="chart-container">
+                            <h4>Projected Waste Growth</h4>
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/1c43476d6f565c2371aa07ac52d49b3d/363d7346-ee6b-4222-bcaa-920308f2c3f1/12b84c69.png" alt="Line chart showing projected increase in plastic waste by 2040" class="chart-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1761062186/pplx_project_search_images/a8f5cbb0e6a3d0c7fb704007f52f103b302a8e7b.png" alt="People sorting plastic waste" class="status-photo">
+                    <p class="image-caption">Community volunteers sorting through collected sachet waste for recycling</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Effects Section -->
+    <section class="section effects" id="effects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Environmental &amp; Health Impact</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="effects-grid">
+                <div class="effect-card">
+                    <div class="effect-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1754811436/pplx_project_search_images/1655f885f05671757847b8901963d40d78cde38e.png" alt="Sea turtle with plastic pollution" class="effect-photo">
+                    </div>
+                    <div class="effect-content">
+                        <div class="effect-icon">🐢</div>
+                        <h3>Marine Life Destruction</h3>
+                        <p>Marine animals ingest or get entangled in plastic debris, often leading to death. Sea turtles, fish, and seabirds mistake plastic for food.</p>
+                        <div class="effect-stats">
+                            <span class="effect-stat">100,000+ marine animals die annually</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="effect-card">
+                    <div class="effect-content">
+                        <div class="effect-icon">⚠️</div>
+                        <h3>Human Health Risks</h3>
+                        <p>Microplastics enter the food chain through contaminated seafood, posing health risks to humans who consume affected marine life.</p>
+                        <div class="effect-stats">
+                            <span class="effect-stat">Microplastics found in 90% of salt brands</span>
+                        </div>
+                    </div>
+                    <div class="effect-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1761062185/pplx_project_search_images/b6ba264564d6c522c78142b72abb66c05a9f66ff.png" alt="Discarded plastic sachets on street" class="effect-photo">
+                    </div>
+                </div>
+                <div class="effect-card">
+                    <div class="effect-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1761062185/pplx_project_search_images/b8feea53f7cd2d1b5e9a4692c0f628cd112e7c6d.png" alt="Landfill with plastic waste" class="effect-photo">
+                    </div>
+                    <div class="effect-content">
+                        <div class="effect-icon">🌊</div>
+                        <h3>Infrastructure Damage</h3>
+                        <p>Plastic waste clogs drainage systems, worsening flooding during typhoons and heavy rains, affecting entire communities.</p>
+                        <div class="effect-stats">
+                            <span class="effect-stat">Metro Manila floods worsen by 40% due to plastic blockage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="section solutions" id="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Innovative Solutions</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-icon">♻️</div>
+                        <h3>Refill Systems</h3>
+                    </div>
+                    <p>Zero waste stores and refilling stations allow consumers to bring reusable containers, reducing sachet dependency</p>
+                    <div class="solution-benefits">
+                        <span class="benefit-tag">Cost Savings: 201% vs sachets</span>
+                        <span class="benefit-tag">50,000+ sachets avoided</span>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-icon">🌱</div>
+                        <h3>Alternative Materials</h3>
+                    </div>
+                    <p>Development of corn husk and chicken feather packaging as biodegradable alternatives to plastic sachets</p>
+                    <div class="solution-benefits">
+                        <span class="benefit-tag">100% Biodegradable</span>
+                        <span class="benefit-tag">Local Materials</span>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-icon">📜</div>
+                        <h3>Extended Producer Responsibility</h3>
+                    </div>
+                    <p>Legislation requiring companies to take responsibility for their packaging throughout its lifecycle</p>
+                    <div class="solution-benefits">
+                        <span class="benefit-tag">Corporate Accountability</span>
+                        <span class="benefit-tag">Waste Reduction Incentives</span>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-icon">⚖️</div>
+                        <h3>Policy &amp; Regulation</h3>
+                    </div>
+                    <p>Bans on single-use plastics and improved waste segregation requirements</p>
+                    <div class="solution-benefits">
+                        <span class="benefit-tag">Legal Framework</span>
+                        <span class="benefit-tag">Enforcement Mechanisms</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="section success-stories" id="success">
+        <div class="container">
+            <div class="section-header">
+                <h2>Success Stories</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="success-grid">
+                <div class="success-card featured">
+                    <div class="success-badge">⭐ FEATURED SUCCESS</div>
+                    <h3>Siquijor Island Success</h3>
+                    <div class="success-metric">
+                        <span class="metric-number">58%</span>
+                        <span class="metric-label">waste diversion</span>
+                    </div>
+                    <p>Achieved 58% waste diversion rate through proper segregation, composting, and recycling programs</p>
+                    <div class="success-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">🗂️</span>
+                            <span>Proper waste segregation</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🌱</span>
+                            <span>Community composting</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">♻️</span>
+                            <span>Recycling programs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="success-card">
+                    <h3>Major Ports Achievement</h3>
+                    <div class="success-metric">
+                        <span class="metric-number">50%</span>
+                        <span class="metric-label">reduction</span>
+                    </div>
+                    <p>Ports of Batangas, Cagayan De Oro, and Manila North Port reduced plastic waste leakage by 50%</p>
+                </div>
+                
+                <div class="success-card">
+                    <h3>Kuha Sa Tingi Initiative</h3>
+                    <div class="success-metric">
+                        <span class="metric-number">50,000+</span>
+                        <span class="metric-label">sachets avoided</span>
+                    </div>
+                    <p>Greenpeace refill project avoided over 50,000 sachets and saved consumers 201% vs sachet prices</p>
+                </div>
+                
+                <div class="success-card">
+                    <h3>Corporate Partnerships</h3>
+                    <div class="success-metric">
+                        <span class="metric-number">1,300+</span>
+                        <span class="metric-label">schools involved</span>
+                    </div>
+                    <p>Companies like Nestlé partnering with LGUs to collect sachets and convert them to eco-bricks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Take Action Section -->
+    <section class="section take-action" id="action">
+        <div class="container">
+            <div class="section-header">
+                <h2>Take Action Now</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Every action counts in fighting the sachet scourge. Start making a difference today.</p>
+            </div>
+            <div class="action-content">
+                <div class="action-grid">
+                    <div class="action-card">
+                        <div class="action-icon">🏪</div>
+                        <h3>Support Zero Waste</h3>
+                        <p>Support Zero Waste stores and refill systems in your community</p>
+                        <button class="btn btn--outline" onclick="showActionDetails('zerowaste')">Learn More</button>
+                    </div>
+                    <div class="action-card">
+                        <div class="action-icon">🗂️</div>
+                        <h3>Waste Segregation</h3>
+                        <p>Practice proper waste segregation at home</p>
+                        <button class="btn btn--outline" onclick="showActionDetails('segregation')">Learn More</button>
+                    </div>
+                    <div class="action-card">
+                        <div class="action-icon">♻️</div>
+                        <h3>Choose Reusables</h3>
+                        <p>Choose reusable containers over sachets when possible</p>
+                        <button class="btn btn--outline" onclick="showActionDetails('reusable')">Learn More</button>
+                    </div>
+                    <div class="action-card">
+                        <div class="action-icon">📢</div>
+                        <h3>Advocate for EPR</h3>
+                        <p>Advocate for Extended Producer Responsibility legislation</p>
+                        <button class="btn btn--outline" onclick="showActionDetails('advocacy')">Learn More</button>
+                    </div>
+                    <div class="action-card">
+                        <div class="action-icon">🤝</div>
+                        <h3>Join Programs</h3>
+                        <p>Join community recycling programs</p>
+                        <button class="btn btn--outline" onclick="showActionDetails('community')">Learn More</button>
+                    </div>
+                    <div class="action-card">
+                        <div class="action-icon">🎓</div>
+                        <h3>Educate Others</h3>
+                        <p>Educate others about the sachet problem</p>
+                        <button class="btn btn--outline" onclick="showActionDetails('education')">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="cta-section">
+                    <h3>Ready to Make a Difference?</h3>
+                    <p>Take action today to reduce single-use plastic waste. Connect with organizations &amp; initiatives working to solve the sachet crisis.</p>
+                    
+                    <div class="action-links-grid">
+                        <div class="action-link-card">
+                            <div class="action-link-icon">🌍</div>
+                            <h4>Join Zero Waste Pilipinas</h4>
+                            <p>Connect with the zero waste community</p>
+                            <a href="https://www.facebook.com/zerowastepilipinas/" target="_blank" class="btn btn--primary action-btn">
+                                Join Community
+                                <span class="external-icon">↗</span>
+                            </a>
+                        </div>
+                        
+                        <div class="action-link-card">
+                            <div class="action-link-icon">🐼</div>
+                            <h4>Support WWF Philippines</h4>
+                            <p>Get involved in conservation efforts</p>
+                            <a href="https://wwf.org.ph/get-involved/" target="_blank" class="btn btn--primary action-btn">
+                                Get Involved
+                                <span class="external-icon">↗</span>
+                            </a>
+                        </div>
+                        
+                        <div class="action-link-card">
+                            <div class="action-link-icon">🤝</div>
+                            <h4>Volunteer with Mother Earth Foundation</h4>
+                            <p>Join local environmental initiatives</p>
+                            <a href="https://www.motherearthphil.org/get-involved" target="_blank" class="btn btn--primary action-btn">
+                                Volunteer Now
+                                <span class="external-icon">↗</span>
+                            </a>
+                        </div>
+                        
+                        <div class="action-link-card">
+                            <div class="action-link-icon">📋</div>
+                            <h4>Sign Greenpeace Petitions</h4>
+                            <p>Advocate for policy change</p>
+                            <a href="https://www.greenpeace.org/philippines/act/" target="_blank" class="btn btn--primary action-btn">
+                                Take Action
+                                <span class="external-icon">↗</span>
+                            </a>
+                        </div>
+                        
+                        <div class="action-link-card">
+                            <div class="action-link-icon">📊</div>
+                            <h4>Report Plastic Pollution</h4>
+                            <p>Document and report plastic waste</p>
+                            <a href="https://www.breakfreefromplastic.org/" target="_blank" class="btn btn--primary action-btn">
+                                Report Now
+                                <span class="external-icon">↗</span>
+                            </a>
+                        </div>
+                        
+                        <div class="action-link-card">
+                            <div class="action-link-icon">⚖️</div>
+                            <h4>Learn About Republic Act 9003</h4>
+                            <p>Understand waste management laws</p>
+                            <a href="https://www.denr.gov.ph/" target="_blank" class="btn btn--primary action-btn">
+                                Learn More
+                                <span class="external-icon">↗</span>
+                            </a>
+                        </div>
+                        
+                        <div class="action-link-card">
+                            <div class="action-link-icon">🌱</div>
+                            <h4>Join Plastic-Free July</h4>
+                            <p>Take the plastic-free challenge</p>
+                            <a href="https://www.plasticfreejuly.org/" target="_blank" class="btn btn--primary action-btn">
+                                Join Challenge
+                                <span class="external-icon">↗</span>
+                            </a>
+                        </div>
+                        
+                        <div class="action-link-card featured-action">
+                            <div class="action-link-icon">🎯</div>
+                            <h4>Find a Refill Station Near You</h4>
+                            <p>Discover zero-waste shopping options in your area</p>
+                            <a href="https://www.facebook.com/zerowastepilipinas/" target="_blank" class="btn btn--secondary action-btn">
+                                Find Stations
+                                <span class="external-icon">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section class="section references">
+        <div class="container">
+            <div class="section-header">
+                <h2>References &amp; Supporting Information</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="references-content">
+                <div class="references-grid">
+                    <div class="reference-category">
+                        <h3>Research Sources</h3>
+                        <ul class="reference-list">
+                            <li>Bradford Council. (n.d.). Single-use plastics.</li>
+                            <li>Earth.Org. (2022). Convenient Inconvenience: Philippines' Reliance on Single-Use Plastic Sachets.</li>
+                            <li>Earth.Org. (n.d.). Plastic Pollution in the Philippines: Causes and Solutions.</li>
+                            <li>National Research Council of the Philippines. (n.d.). The Growing Threat of Microplastics and Plastics.</li>
+                        </ul>
+                    </div>
+                    <div class="reference-category">
+                        <h3>Policy &amp; Organizations</h3>
+                        <ul class="reference-list">
+                            <li>Enviliance ASIA. (n.d.). Philippines, Plastic Pollution Issues.</li>
+                            <li>Nicholas Institute. (n.d.). Plastic Pollution Policy Country Profile: Philippines.</li>
+                            <li>Plastic Bank. (n.d.). Top 5 waste management challenges in the Philippines.</li>
+                            <li>WWF. (2018). The scourge of single-use plastic in the Philippines.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="supporting-resources">
+                    <h3>Additional Resources</h3>
+                    <p class="resources-intro">Connect with these organizations working to solve the plastic pollution crisis in the Philippines:</p>
+                    <div class="resource-links-grid">
+                        <div class="resource-link-card">
+                            <a href="https://wwf.org.ph/" target="_blank" class="resource-link">
+                                <div class="resource-link-header">
+                                    <span class="resource-link-icon">🐼</span>
+                                    <h4>WWF Philippines</h4>
+                                    <span class="external-link-icon">↗</span>
+                                </div>
+                                <p>World Wildlife Fund - Conservation and environmental protection</p>
+                            </a>
+                        </div>
+                        <div class="resource-link-card">
+                            <a href="https://www.greenpeace.org/philippines/" target="_blank" class="resource-link">
+                                <div class="resource-link-header">
+                                    <span class="resource-link-icon">🌱</span>
+                                    <h4>Greenpeace Philippines</h4>
+                                    <span class="external-link-icon">↗</span>
+                                </div>
+                                <p>Global environmental activism and advocacy</p>
+                            </a>
+                        </div>
+                        <div class="resource-link-card">
+                            <a href="https://www.motherearthphil.org/" target="_blank" class="resource-link">
+                                <div class="resource-link-header">
+                                    <span class="resource-link-icon">🌍</span>
+                                    <h4>Mother Earth Foundation</h4>
+                                    <span class="external-link-icon">↗</span>
+                                </div>
+                                <p>Zero waste movement and sustainable solutions</p>
+                            </a>
+                        </div>
+                        <div class="resource-link-card">
+                            <a href="https://www.breakfreefromplastic.org/" target="_blank" class="resource-link">
+                                <div class="resource-link-header">
+                                    <span class="resource-link-icon">🚫</span>
+                                    <h4>Break Free From Plastic</h4>
+                                    <span class="external-link-icon">↗</span>
+                                </div>
+                                <p>Global movement for a future free from plastic pollution</p>
+                            </a>
+                        </div>
+                        <div class="resource-link-card">
+                            <a href="https://www.plasticsolutionsfund.org/" target="_blank" class="resource-link">
+                                <div class="resource-link-header">
+                                    <span class="resource-link-icon">💡</span>
+                                    <h4>Plastic Solutions Fund</h4>
+                                    <span class="external-link-icon">↗</span>
+                                </div>
+                                <p>Supporting innovations to end plastic pollution</p>
+                            </a>
+                        </div>
+                        <div class="resource-link-card">
+                            <a href="https://earth.org/philippines-plastic/" target="_blank" class="resource-link">
+                                <div class="resource-link-header">
+                                    <span class="resource-link-icon">📰</span>
+                                    <h4>Earth.Org Philippines</h4>
+                                    <span class="external-link-icon">↗</span>
+                                </div>
+                                <p>Environmental news and plastic pollution information</p>
+                            </a>
+                        </div>
+                        <div class="resource-link-card">
+                            <a href="https://www.denr.gov.ph/" target="_blank" class="resource-link">
+                                <div class="resource-link-header">
+                                    <span class="resource-link-icon">🏛️</span>
+                                    <h4>DENR Philippines</h4>
+                                    <span class="external-link-icon">↗</span>
+                                </div>
+                                <p>Department of Environment and Natural Resources</p>
+                            </a>
+                        </div>
+                        <div class="resource-link-card">
+                            <a href="https://plasticbank.com/" target="_blank" class="resource-link">
+                                <div class="resource-link-header">
+                                    <span class="resource-link-icon">🏦</span>
+                                    <h4>Plastic Bank</h4>
+                                    <span class="external-link-icon">↗</span>
+                                </div>
+                                <p>Reducing ocean plastic while helping communities</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="section disclaimer-section">
+        <div class="container">
+            <div class="disclaimer-content">
+                <h2>Disclaimer</h2>
+                <p>This website is a school project created to inform the public about the environmental issue of single-use plastic waste and to inspire collective action for the preservation and protection of Earth's ecosystems. The information presented is based on research and aims to spark discussion and change.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sachet Scourge</h4>
+                    <p>Understanding and addressing the single-use plastic crisis in the Philippines through education, advocacy, and action.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#definition">What are SUPs?</a></li>
+                        <li><a href="#status">Current Crisis</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#action">Take Action</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">Greenpeace Philippines</a></li>
+                        <li><a href="#" target="_blank">WWF Philippines</a></li>
+                        <li><a href="#" target="_blank">Zero Waste Pilipinas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>This project is made by the student of Mapua Malayan Digital College taking People and the Earth's Ecosystems subject.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Action Details Modal -->
+    <div class="modal" id="action-modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
