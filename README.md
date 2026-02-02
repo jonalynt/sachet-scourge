@@ -1,4 +1,6 @@
-# Sachet Scourge: Philippines Plastic Crisis
+# <h1 align="center"> Sachet Scourge: Philippines Plastic Crisis </h1>
+
+---
 
 **Understanding the Single-Use Plastic Crisis in the Philippines**
 
@@ -8,6 +10,8 @@ This advocacy website educates on the sachet scourge, its causes, impacts, solut
   
 https://github.com/user-attachments/assets/3e848253-619c-4a04-a867-3d3748dd466e
 
+---
+
 ## 🎯 Project Purpose
 
 **Academic project & portfolio showcase** demonstrating:
@@ -16,6 +20,8 @@ https://github.com/user-attachments/assets/3e848253-619c-4a04-a867-3d3748dd466e
 - UX design for advocacy (clear CTAs, mobile-first)
 
 **Target audience**: Filipino students, communities, environmental advocates in Iloilo/Western Visayas.
+
+---
 
 ## 📊 Key Content Highlights
 
@@ -27,6 +33,9 @@ https://github.com/user-attachments/assets/3e848253-619c-4a04-a867-3d3748dd466e
 | **Success Stories** | Siquijor 58% diversion, Greenpeace 50K sachets avoided |
 | **Take Action** | Zero-waste links, volunteer opportunities, RA 9003 info |
 
+
+---
+
 ## 🛠️ Tech Stack (My Tools)
 
 - Frontend: HTML5, CSS3, Vanilla JavaScript
@@ -36,6 +45,8 @@ https://github.com/user-attachments/assets/3e848253-619c-4a04-a867-3d3748dd466e
 - Visualization: Custom CSS/JS counters
 - Deployment: GitHub Pages
 - Testing: Chrome DevTools (mobile-first)
+
+---
 
 ## 📁 Repository Structure
 
@@ -54,23 +65,55 @@ https://github.com/user-attachments/assets/3e848253-619c-4a04-a867-3d3748dd466e
     └── README.md           # Project overview
 ```
 
+---
+
 ## 🚀 Quick Setup (GitHub Workflow)
 
-1. **Fork & Clone**
+```bash
+1. Fork & Clone
+  - git clone https://github.com/jonalynt/sachet-scourge.git
+  - cd sachet-scourge
 
-- git clone [https://github.com/YOUR-USERNAME/sachet-scourge.git](https://github.com/YOUR-USERNAME/sachet-scourge.git)
-cd sachet-scourge
+2. Create feature branch
+  - git checkout -b feature/add-new-section
 
-2. **Create feature branch**
+3. Edit files (VS Code), then:
+  - git add .
+  - git commit -m "Add interactive refill station map"
+  - git push origin feature/add-new-section
 
-- git checkout -b feature/add-new-section
+4. Create Pull Request on GitHub
 
-3. **Edit files (VS Code), then:**
+5. Deploy: Settings > Pages > Deploy from main branch
+```
 
-- git add .
-- git commit -m "Add interactive refill station map"
-- git push origin feature/add-new-section
+---
 
-4. **Create Pull Request on GitHub**
+## Live Demo:
+```bash
+https://jonalynt.github.io/sachet-scourge/
+```
 
-5. **Deploy: Settings > Pages > Deploy from main branch**
+---
+
+## 💼 Skills Demonstrated
+
+- Responsive design for mobile-first Philippines audience
+- Data-driven content (sourced stats, projections)
+- Interactive elements (scroll-triggered animations)
+- Advocacy UX (clear CTAs, trust signals)
+- Git workflow (version control, collaboration-ready)
+
+---
+
+## 📚 Sources
+
+- [Earth.Org: Sachet Crisis](https://earth.org/philippines-sachet-plastic/)
+- [WWF Philippines Report](https://wwf.org.ph/publications)
+- [Greenpeace Success Stories](https://greenpeace.org.ph/)
+
+---
+
+## Disclaimer
+
+*School project for environmental awareness, not commercial advocacy.*
