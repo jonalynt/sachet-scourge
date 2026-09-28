@@ -1436,6 +1436,20 @@ body {
   color: #ffffff;
 }
 
+.canvas-wrapper {
+    position: relative;
+    width: 100%;
+    height: 220px; /* Adjust height to match your card height */
+    margin-top: 15px;
+}
+
+.chart-caption {
+    font-size: 0.85rem;
+    color: #a1a1aa;
+    margin-top: 12px;
+    text-align: center;
+}
+
 .chart-image {
   width: 100%;
   max-width: 100%;

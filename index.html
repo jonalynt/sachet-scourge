@@ -172,23 +172,139 @@
                     </div>
                 </div>
                 
+                <!-- Chart.js CDN -->
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
                 <div class="charts-section">
                     <h3>Quantitative Analysis</h3>
                     <div class="charts-grid">
+                        <!-- Chart 1: Bar Chart -->
                         <div class="chart-container">
                             <h4>Daily Sachet Consumption</h4>
-                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/1c43476d6f565c2371aa07ac52d49b3d/2a2c456a-cc0d-411f-beab-0c0bd7ccea10/2c5673b4.png" alt="Daily sachet usage chart showing 163 million sachets consumed daily" class="chart-image">
+                            <div class="canvas-wrapper">
+                                <canvas id="sachetChart"></canvas>
+                            </div>
+                            <p class="chart-caption">163 million sachets consumed daily in the Philippines</p>
                         </div>
+
+                        <!-- Chart 2: Donut / Pie Chart -->
                         <div class="chart-container">
                             <h4>Plastic Waste Distribution</h4>
-                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/1c43476d6f565c2371aa07ac52d49b3d/8e252332-93b6-4cd8-9430-3b0195c544db/12b84c69.png" alt="Pie chart showing 20% of plastic waste ends up in ocean" class="chart-image">
+                            <div class="canvas-wrapper">
+                                <canvas id="distributionChart"></canvas>
+                            </div>
+                            <p class="chart-caption">20% of plastic waste ends up directly in oceans</p>
                         </div>
+
+                        <!-- Chart 3: Line Chart -->
                         <div class="chart-container">
                             <h4>Projected Waste Growth</h4>
-                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/1c43476d6f565c2371aa07ac52d49b3d/363d7346-ee6b-4222-bcaa-920308f2c3f1/12b84c69.png" alt="Line chart showing projected increase in plastic waste by 2040" class="chart-image">
+                            <div class="canvas-wrapper">
+                                <canvas id="growthChart"></canvas>
+                            </div>
+                            <p class="chart-caption">Mismanaged plastic waste projected to increase by 95% by 2040</p>
                         </div>
                     </div>
                 </div>
+
+                <script>
+                    // Global Chart.js styling options for dark theme dark theme matching
+                    Chart.defaults.color = '#a1a1aa';
+                    Chart.defaults.font.family = 'system-ui, -apple-system, sans-serif';
+
+                    // 1. Daily Sachet Consumption (Bar Chart)
+                    new Chart(document.getElementById('sachetChart'), {
+                        type: 'bar',
+                        data: {
+                            labels: ['Shampoo', 'Detergent', 'Coffee/Food', 'Other Packaging'],
+                            datasets: [{
+                                label: 'Millions per Day',
+                                data: [60, 48, 35, 20],
+                                backgroundColor: '#06b6d4',
+                                borderRadius: 6
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: {
+                                legend: { display: false },
+                                tooltip: {
+                                    callbacks: {
+                                        label: (ctx) => ` ${ctx.raw} million sachets/day`
+                                    }
+                                }
+                            },
+                            scales: {
+                                x: { grid: { display: false } },
+                                y: { grid: { color: 'rgba(255, 255, 255, 0.1)' } }
+                            }
+                        }
+                    });
+
+                    // 2. Plastic Waste Distribution (Donut Chart)
+                    new Chart(document.getElementById('distributionChart'), {
+                        type: 'doughnut',
+                        data: {
+                            labels: ['Ocean Bound', 'Landfills', 'Unmanaged On-Land', 'Recycled/Managed'],
+                            datasets: [{
+                                data: [20, 40, 31, 9],
+                                backgroundColor: ['#ef4444', '#f59e0b', '#3b82f6', '#10b981'],
+                                borderWidth: 0
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: {
+                                legend: {
+                                    position: 'bottom',
+                                    labels: { boxWidth: 12, padding: 15 }
+                                },
+                                tooltip: {
+                                    callbacks: {
+                                        label: (ctx) => ` ${ctx.label}: ${ctx.raw}%`
+                                    }
+                                }
+                            },
+                            cutout: '65%'
+                        }
+                    });
+
+                    // 3. Projected Waste Growth (Line Chart)
+                    new Chart(document.getElementById('growthChart'), {
+                        type: 'line',
+                        data: {
+                            labels: ['2020', '2025', '2030', '2035', '2040'],
+                            datasets: [{
+                                label: 'Mismanaged Waste (Mt)',
+                                data: [2.7, 3.4, 4.1, 4.8, 5.3],
+                                borderColor: '#10b981',
+                                backgroundColor: 'rgba(16, 185, 129, 0.15)',
+                                fill: true,
+                                tension: 0.35,
+                                pointRadius: 4,
+                                pointHoverRadius: 6
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: {
+                                legend: { display: false },
+                                tooltip: {
+                                    callbacks: {
+                                        label: (ctx) => ` ${ctx.raw} Million Tons`
+                                    }
+                                }
+                            },
+                            scales: {
+                                x: { grid: { display: false } },
+                                y: { grid: { color: 'rgba(255, 255, 255, 0.1)' } }
+                            }
+                        }
+                    });
+                </script>
 
                 <div class="status-image">
                     <img src="https://pplx-res.cloudinary.com/image/upload/v1761062186/pplx_project_search_images/a8f5cbb0e6a3d0c7fb704007f52f103b302a8e7b.png" alt="People sorting plastic waste" class="status-photo">
