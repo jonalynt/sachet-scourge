@@ -14,7 +14,7 @@ https://github.com/user-attachments/assets/3e848253-619c-4a04-a867-3d3748dd466e
 
 ## 🎯 Project Purpose
 
-**Academic project & portfolio showcase** demonstrating:
+**Academic project** demonstrating:
 - Web development skills (responsive design, JS interactivity)
 - Data visualization (waste stats, projections)
 - UX design for advocacy (clear CTAs, mobile-first)
