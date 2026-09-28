@@ -1,5 +1,5 @@
 :root {
-  /* Primitive Color Tokens */
+
   --color-white: rgba(255, 255, 255, 1);
   --color-black: rgba(0, 0, 0, 1);
   --color-cream-50: rgba(252, 252, 249, 1);
@@ -23,7 +23,7 @@
   --color-orange-400: rgba(230, 129, 97, 1);
   --color-orange-500: rgba(168, 75, 47, 1);
 
-  /* RGB versions for opacity control */
+
   --color-brown-600-rgb: 94, 82, 64;
   --color-teal-500-rgb: 33, 128, 141;
   --color-slate-900-rgb: 19, 52, 59;
@@ -33,17 +33,17 @@
   --color-orange-500-rgb: 168, 75, 47;
   --color-orange-400-rgb: 230, 129, 97;
 
-  /* Background color tokens (Light Mode) */
-  --color-bg-1: rgba(59, 130, 246, 0.08); /* Light blue */
-  --color-bg-2: rgba(245, 158, 11, 0.08); /* Light yellow */
-  --color-bg-3: rgba(34, 197, 94, 0.08); /* Light green */
-  --color-bg-4: rgba(239, 68, 68, 0.08); /* Light red */
-  --color-bg-5: rgba(147, 51, 234, 0.08); /* Light purple */
-  --color-bg-6: rgba(249, 115, 22, 0.08); /* Light orange */
-  --color-bg-7: rgba(236, 72, 153, 0.08); /* Light pink */
-  --color-bg-8: rgba(6, 182, 212, 0.08); /* Light cyan */
 
-  /* Semantic Color Tokens (Light Mode) */
+  --color-bg-1: rgba(59, 130, 246, 0.08);
+  --color-bg-2: rgba(245, 158, 11, 0.08); 
+  --color-bg-3: rgba(34, 197, 94, 0.08);
+  --color-bg-4: rgba(239, 68, 68, 0.08);
+  --color-bg-5: rgba(147, 51, 234, 0.08);
+  --color-bg-6: rgba(249, 115, 22, 0.08);
+  --color-bg-7: rgba(236, 72, 153, 0.08);
+  --color-bg-8: rgba(6, 182, 212, 0.08);
+
+
   --color-background: var(--color-cream-50);
   --color-surface: var(--color-cream-100);
   --color-text: var(--color-slate-900);
@@ -65,7 +65,7 @@
   --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
   --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
 
-  /* Common style patterns */
+
   --focus-ring: 0 0 0 3px var(--color-focus-ring);
   --focus-outline: 2px solid var(--color-primary);
   --status-bg-opacity: 0.15;
@@ -73,13 +73,13 @@
   --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
   --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
 
-  /* RGB versions for opacity control */
+
   --color-success-rgb: 33, 128, 141;
   --color-error-rgb: 192, 21, 47;
   --color-warning-rgb: 168, 75, 47;
   --color-info-rgb: 98, 108, 113;
 
-  /* Typography */
+
   --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-family-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo,
@@ -101,7 +101,7 @@
   --line-height-normal: 1.5;
   --letter-spacing-tight: -0.01em;
 
-  /* Spacing */
+ 
   --space-0: 0;
   --space-1: 1px;
   --space-2: 2px;
@@ -115,14 +115,14 @@
   --space-24: 24px;
   --space-32: 32px;
 
-  /* Border Radius */
+
   --radius-sm: 6px;
   --radius-base: 8px;
   --radius-md: 10px;
   --radius-lg: 12px;
   --radius-full: 9999px;
 
-  /* Shadows */
+
   --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04),
@@ -132,38 +132,38 @@
   --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15),
     inset 0 -1px 0 rgba(0, 0, 0, 0.03);
 
-  /* Animation */
+
   --duration-fast: 150ms;
   --duration-normal: 250ms;
   --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* Layout */
+
   --container-sm: 640px;
   --container-md: 768px;
   --container-lg: 1024px;
   --container-xl: 1280px;
 }
 
-/* Dark mode colors */
+
 @media (prefers-color-scheme: dark) {
   :root {
-    /* RGB versions for opacity control (Dark Mode) */
+  
     --color-gray-400-rgb: 119, 124, 124;
     --color-teal-300-rgb: 50, 184, 198;
     --color-gray-300-rgb: 167, 169, 169;
     --color-gray-200-rgb: 245, 245, 245;
 
-    /* Background color tokens (Dark Mode) */
-    --color-bg-1: rgba(29, 78, 216, 0.15); /* Dark blue */
-    --color-bg-2: rgba(180, 83, 9, 0.15); /* Dark yellow */
-    --color-bg-3: rgba(21, 128, 61, 0.15); /* Dark green */
-    --color-bg-4: rgba(185, 28, 28, 0.15); /* Dark red */
-    --color-bg-5: rgba(107, 33, 168, 0.15); /* Dark purple */
-    --color-bg-6: rgba(194, 65, 12, 0.15); /* Dark orange */
-    --color-bg-7: rgba(190, 24, 93, 0.15); /* Dark pink */
-    --color-bg-8: rgba(8, 145, 178, 0.15); /* Dark cyan */
 
-    /* Semantic Color Tokens (Dark Mode) */
+    --color-bg-1: rgba(29, 78, 216, 0.15);
+    --color-bg-2: rgba(180, 83, 9, 0.15);
+    --color-bg-3: rgba(21, 128, 61, 0.15);
+    --color-bg-4: rgba(185, 28, 28, 0.15);
+    --color-bg-5: rgba(107, 33, 168, 0.15);
+    --color-bg-6: rgba(194, 65, 12, 0.15);
+    --color-bg-7: rgba(190, 24, 93, 0.15);
+    --color-bg-8: rgba(8, 145, 178, 0.15);
+
+
     --color-background: var(--color-charcoal-700);
     --color-surface: var(--color-charcoal-800);
     --color-text: var(--color-gray-200);
@@ -189,7 +189,7 @@
     --color-border-secondary: rgba(var(--color-gray-400-rgb), 0.2);
     --color-select-caret: rgba(var(--color-gray-200-rgb), 0.8);
 
-    /* Common style patterns - updated for dark mode */
+
     --focus-ring: 0 0 0 3px var(--color-focus-ring);
     --focus-outline: 2px solid var(--color-primary);
     --status-bg-opacity: 0.15;
@@ -197,7 +197,7 @@
     --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
     --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
 
-    /* RGB versions for dark mode */
+
     --color-success-rgb: var(--color-teal-300-rgb);
     --color-error-rgb: var(--color-red-400-rgb);
     --color-warning-rgb: var(--color-orange-400-rgb);
@@ -205,25 +205,25 @@
   }
 }
 
-/* Data attribute for manual theme switching */
+
 [data-color-scheme="dark"] {
-  /* RGB versions for opacity control (dark mode) */
+
   --color-gray-400-rgb: 119, 124, 124;
   --color-teal-300-rgb: 50, 184, 198;
   --color-gray-300-rgb: 167, 169, 169;
   --color-gray-200-rgb: 245, 245, 245;
 
-  /* Colorful background palette - Dark Mode */
-  --color-bg-1: rgba(29, 78, 216, 0.15); /* Dark blue */
-  --color-bg-2: rgba(180, 83, 9, 0.15); /* Dark yellow */
-  --color-bg-3: rgba(21, 128, 61, 0.15); /* Dark green */
-  --color-bg-4: rgba(185, 28, 28, 0.15); /* Dark red */
-  --color-bg-5: rgba(107, 33, 168, 0.15); /* Dark purple */
-  --color-bg-6: rgba(194, 65, 12, 0.15); /* Dark orange */
-  --color-bg-7: rgba(190, 24, 93, 0.15); /* Dark pink */
-  --color-bg-8: rgba(8, 145, 178, 0.15); /* Dark cyan */
 
-  /* Semantic Color Tokens (Dark Mode) */
+  --color-bg-1: rgba(29, 78, 216, 0.15);
+  --color-bg-2: rgba(180, 83, 9, 0.15);
+  --color-bg-3: rgba(21, 128, 61, 0.15);
+  --color-bg-4: rgba(185, 28, 28, 0.15);
+  --color-bg-5: rgba(107, 33, 168, 0.15);
+  --color-bg-6: rgba(194, 65, 12, 0.15);
+  --color-bg-7: rgba(190, 24, 93, 0.15); 
+  --color-bg-8: rgba(8, 145, 178, 0.15); 
+
+
   --color-background: var(--color-charcoal-700);
   --color-surface: var(--color-charcoal-800);
   --color-text: var(--color-gray-200);
@@ -248,7 +248,7 @@
   --color-border-secondary: rgba(var(--color-gray-400-rgb), 0.2);
   --color-select-caret: rgba(var(--color-gray-200-rgb), 0.8);
 
-  /* Common style patterns - updated for dark mode */
+
   --focus-ring: 0 0 0 3px var(--color-focus-ring);
   --focus-outline: 2px solid var(--color-primary);
   --status-bg-opacity: 0.15;
@@ -256,7 +256,7 @@
   --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
   --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
 
-  /* RGB versions for dark mode */
+
   --color-success-rgb: var(--color-teal-300-rgb);
   --color-error-rgb: var(--color-red-400-rgb);
   --color-warning-rgb: var(--color-orange-400-rgb);
@@ -264,12 +264,12 @@
 }
 
 [data-color-scheme="light"] {
-  /* RGB versions for opacity control (light mode) */
+
   --color-brown-600-rgb: 94, 82, 64;
   --color-teal-500-rgb: 33, 128, 141;
   --color-slate-900-rgb: 19, 52, 59;
 
-  /* Semantic Color Tokens (Light Mode) */
+
   --color-background: var(--color-cream-50);
   --color-surface: var(--color-cream-100);
   --color-text: var(--color-slate-900);
@@ -290,14 +290,14 @@
   --color-info: var(--color-slate-500);
   --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
 
-  /* RGB versions for light mode */
+
   --color-success-rgb: var(--color-teal-500-rgb);
   --color-error-rgb: var(--color-red-500-rgb);
   --color-warning-rgb: var(--color-orange-500-rgb);
   --color-info-rgb: var(--color-slate-500-rgb);
 }
 
-/* Base styles */
+
 html {
   font-size: var(--font-size-base);
   font-family: var(--font-family-base);
@@ -319,7 +319,7 @@ body {
   box-sizing: inherit;
 }
 
-/* Typography */
+
 h1,
 h2,
 h3,
@@ -390,7 +390,7 @@ pre code {
   padding: 0;
 }
 
-/* Buttons */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -469,7 +469,7 @@ pre code {
   cursor: not-allowed;
 }
 
-/* Form elements */
+
 .form-control {
   display: block;
   width: 100%;
@@ -501,14 +501,14 @@ select.form-control {
   padding-right: var(--space-32);
 }
 
-/* Add a dark mode specific caret */
+
 @media (prefers-color-scheme: dark) {
   select.form-control {
     background-image: var(--select-caret-dark);
   }
 }
 
-/* Also handle data-color-scheme */
+
 [data-color-scheme="dark"] select.form-control {
   background-image: var(--select-caret-dark);
 }
@@ -533,7 +533,7 @@ select.form-control {
   margin-bottom: var(--space-16);
 }
 
-/* Card component */
+
 .card {
   background-color: var(--color-surface);
   border-radius: var(--radius-lg);
@@ -557,7 +557,7 @@ select.form-control {
   border-bottom: 1px solid var(--color-card-border-inner);
 }
 
-/* Status indicators - simplified with CSS variables */
+
 .status {
   display: inline-flex;
   align-items: center;
@@ -607,7 +607,7 @@ select.form-control {
     rgba(var(--color-info-rgb, 98, 108, 113), var(--status-border-opacity));
 }
 
-/* Container layout */
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -637,7 +637,7 @@ select.form-control {
   }
 }
 
-/* Utility classes */
+
 .flex {
   display: flex;
 }
@@ -708,7 +708,7 @@ select.form-control {
   display: none;
 }
 
-/* Accessibility */
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -726,7 +726,7 @@ select.form-control {
   outline-offset: 2px;
 }
 
-/* Dark mode specifics */
+
 [data-color-scheme="dark"] .btn--outline {
   border: 1px solid var(--color-border-secondary);
 }
@@ -737,9 +737,9 @@ select.form-control {
     format('woff2');
 }
 
-/* END PERPLEXITY DESIGN SYSTEM */
+
 :root {
-  /* Primitive Color Tokens */
+
   --color-white: rgba(255, 255, 255, 1);
   --color-black: rgba(0, 0, 0, 1);
   --color-cream-50: rgba(252, 252, 249, 1);
@@ -763,7 +763,7 @@ select.form-control {
   --color-orange-400: rgba(230, 129, 97, 1);
   --color-orange-500: rgba(168, 75, 47, 1);
 
-  /* RGB versions for opacity control */
+
   --color-brown-600-rgb: 94, 82, 64;
   --color-teal-500-rgb: 33, 128, 141;
   --color-slate-900-rgb: 19, 52, 59;
@@ -773,17 +773,17 @@ select.form-control {
   --color-orange-500-rgb: 168, 75, 47;
   --color-orange-400-rgb: 230, 129, 97;
 
-  /* Background color tokens (Light Mode) */
-  --color-bg-1: rgba(59, 130, 246, 0.08); /* Light blue */
-  --color-bg-2: rgba(245, 158, 11, 0.08); /* Light yellow */
-  --color-bg-3: rgba(34, 197, 94, 0.08); /* Light green */
-  --color-bg-4: rgba(239, 68, 68, 0.08); /* Light red */
-  --color-bg-5: rgba(147, 51, 234, 0.08); /* Light purple */
-  --color-bg-6: rgba(249, 115, 22, 0.08); /* Light orange */
-  --color-bg-7: rgba(236, 72, 153, 0.08); /* Light pink */
-  --color-bg-8: rgba(6, 182, 212, 0.08); /* Light cyan */
 
-  /* Semantic Color Tokens (Light Mode) */
+  --color-bg-1: rgba(59, 130, 246, 0.08);
+  --color-bg-2: rgba(245, 158, 11, 0.08);
+  --color-bg-3: rgba(34, 197, 94, 0.08);
+  --color-bg-4: rgba(239, 68, 68, 0.08);
+  --color-bg-5: rgba(147, 51, 234, 0.08);
+  --color-bg-6: rgba(249, 115, 22, 0.08);
+  --color-bg-7: rgba(236, 72, 153, 0.08);
+  --color-bg-8: rgba(6, 182, 212, 0.08);
+
+
   --color-background: #000000;
   --color-surface: #111111;
   --color-text: #ffffff;
@@ -805,19 +805,19 @@ select.form-control {
   --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
   --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
 
-  /* Common style patterns */
+
   --focus-ring: 0 0 0 3px var(--color-focus-ring);
   --focus-outline: 2px solid var(--color-primary);
   --status-bg-opacity: 0.15;
   --status-border-opacity: 0.25;
 
-  /* RGB versions for opacity control */
+
   --color-success-rgb: 33, 128, 141;
   --color-error-rgb: 192, 21, 47;
   --color-warning-rgb: 168, 75, 47;
   --color-info-rgb: 98, 108, 113;
 
-  /* Typography */
+
   --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-family-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo,
@@ -839,7 +839,7 @@ select.form-control {
   --line-height-normal: 1.5;
   --letter-spacing-tight: -0.01em;
 
-  /* Spacing */
+
   --space-0: 0;
   --space-1: 1px;
   --space-2: 2px;
@@ -853,14 +853,14 @@ select.form-control {
   --space-24: 24px;
   --space-32: 32px;
 
-  /* Border Radius */
+
   --radius-sm: 6px;
   --radius-base: 8px;
   --radius-md: 10px;
   --radius-lg: 12px;
   --radius-full: 9999px;
 
-  /* Shadows */
+
   --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04),
@@ -870,18 +870,18 @@ select.form-control {
   --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15),
     inset 0 -1px 0 rgba(0, 0, 0, 0.03);
 
-  /* Animation */
+
   --duration-fast: 150ms;
   --duration-normal: 250ms;
   --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* Layout */
+
   --container-sm: 640px;
   --container-md: 768px;
   --container-lg: 1024px;
   --container-xl: 1280px;
   
-  /* Environmental theme colors */
+
   --color-ocean-blue: #1e40af;
   --color-earth-green: #16a34a;
   --color-nature-brown: #92400e;
@@ -890,7 +890,7 @@ select.form-control {
   --color-forest-green: #065f46;
 }
 
-/* Dark mode colors */
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-gray-400-rgb: 119, 124, 124;
@@ -943,7 +943,7 @@ select.form-control {
     format('woff2');
 }
 
-/* Base styles */
+
 html {
   font-size: var(--font-size-base);
   font-family: var(--font-family-base);
@@ -967,7 +967,7 @@ body {
   box-sizing: inherit;
 }
 
-/* Container */
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -977,7 +977,7 @@ body {
   max-width: 1200px;
 }
 
-/* Navigation */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -1058,7 +1058,7 @@ body {
   transition: 0.3s;
 }
 
-/* Hero Section */
+
 .hero {
   min-height: 100vh;
   background: linear-gradient(
@@ -1140,7 +1140,7 @@ body {
   margin-top: var(--space-4);
 }
 
-/* Button Styles */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -1186,7 +1186,7 @@ body {
   border-radius: var(--radius-md);
 }
 
-/* Section Styles */
+
 .section {
   padding: 80px 0;
   position: relative;
@@ -1224,7 +1224,7 @@ body {
   margin: 0 auto;
 }
 
-/* Definition Section */
+
 .definition-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1277,7 +1277,7 @@ body {
   font-style: italic;
 }
 
-/* Causes Section */
+
 .causes {
   background: #0a0a0a;
 }
@@ -1346,7 +1346,7 @@ body {
   color: #e0e0e0;
 }
 
-/* Current Status Section */
+
 .current-status {
   background: #0a0a0a;
 }
@@ -1403,7 +1403,7 @@ body {
   font-size: var(--font-size-base);
 }
 
-/* Charts Section */
+
 .charts-section {
   margin-top: 60px;
 }
@@ -1439,7 +1439,7 @@ body {
 .canvas-wrapper {
     position: relative;
     width: 100%;
-    height: 220px; /* Adjust height to match your card height */
+    height: 220px;
     margin-top: 15px;
 }
 
@@ -1469,7 +1469,7 @@ body {
   box-shadow: var(--shadow-lg);
 }
 
-/* Effects Section */
+
 .effects {
   background: #0a0a0a;
 }
@@ -1560,7 +1560,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Solutions Section */
+
 .solutions {
   background: #0a0a0a;
 }
@@ -1624,7 +1624,7 @@ body {
   border: 1px solid rgba(var(--color-teal-500-rgb), 0.2);
 }
 
-/* Success Stories Section */
+
 .success-stories {
   background: #0a0a0a;
 }
@@ -1728,7 +1728,7 @@ body {
   font-size: var(--font-size-base);
 }
 
-/* Take Action Section */
+
 .take-action {
   background: #0a0a0a;
 }
@@ -1801,7 +1801,7 @@ body {
   justify-content: center;
 }
 
-/* Action Links Grid */
+
 .action-links-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1889,7 +1889,7 @@ body {
   transform: translateX(2px) translateY(-2px);
 }
 
-/* Featured action special styling */
+
 .featured-action .action-btn {
   background: transparent;
   border: 2px solid var(--color-primary);
@@ -1902,7 +1902,7 @@ body {
   border-color: var(--color-primary-hover);
 }
 
-/* Responsive design for action links */
+
 @media (max-width: 768px) {
   .action-links-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1940,7 +1940,7 @@ body {
   }
 }
 
-/* References Section */
+
 .references {
   background: #0a0a0a;
 }
@@ -2015,7 +2015,7 @@ body {
   font-size: var(--font-size-base);
 }
 
-/* Additional Resources Links Styling */
+
 .resources-intro {
   text-align: center;
   color: #e0e0e0;
@@ -2113,7 +2113,7 @@ body {
   color: #ffffff;
 }
 
-/* Active state for resource links */
+
 .resource-link:active {
   transform: translateY(-2px);
 }
@@ -2122,7 +2122,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* Disclaimer Section */
+
 .disclaimer-section {
   background: #0a0a0a;
   padding: var(--space-32) 0;
@@ -2153,7 +2153,7 @@ body {
   margin: 0;
 }
 
-/* Footer */
+
 .footer {
   background: var(--color-slate-900);
   color: #f5f5f5;
@@ -2201,7 +2201,7 @@ body {
   color: var(--color-gray-400);
 }
 
-/* Modal Styles */
+
 .modal {
   display: none;
   position: fixed;
@@ -2307,7 +2307,7 @@ body {
   border-top: 1px solid var(--color-card-border);
 }
 
-/* Resource Links Mobile Responsiveness */
+
 @media (max-width: 768px) {
   .resource-links-grid {
     grid-template-columns: 1fr;
@@ -2332,7 +2332,7 @@ body {
   }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
@@ -2451,7 +2451,7 @@ body {
   }
 }
 
-/* Animation Utilities */
+
 .fade-in {
   animation: fadeIn 0.8s ease-out;
 }
@@ -2482,7 +2482,7 @@ body {
   }
 }
 
-/* Scroll animations */
+
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(30px);
@@ -2494,7 +2494,7 @@ body {
   transform: translateY(0);
 }
 
-/* Reading progress indicator */
+
 #reading-progress {
   position: fixed;
   top: 0;
@@ -2506,7 +2506,7 @@ body {
   transition: width 0.1s ease;
 }
 
-/* Print styles */
+
 @media print {
   .navbar,
   .hero-stats,
