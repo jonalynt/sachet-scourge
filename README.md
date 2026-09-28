@@ -48,45 +48,6 @@ https://github.com/user-attachments/assets/3e848253-619c-4a04-a867-3d3748dd466e
 
 ---
 
-## 📁 Repository Structure
-
-```bash
-    sachet-scourge/
-    ├── index.html          # Landing page with all sections
-    ├── css/
-    │   └── styles.css      # Responsive grid, animations
-    ├── js/
-    │   └── script.js       # Stats counters, smooth scroll
-    ├── assets/
-    │   ├── images/         # Sachets, infographics
-    │   └── icons/          # Emojis as SVGs
-    ├── docs/
-    │   └── research.md     # Sources & methodology
-    └── README.md           # Project overview
-```
-
----
-
-## 🚀 Quick Setup (GitHub Workflow)
-
-```bash
-1. Fork & Clone
-  - git clone https://github.com/jonalynt/sachet-scourge.git
-  - cd sachet-scourge
-
-2. Create feature branch
-  - git checkout -b feature/add-new-section
-
-3. Edit files (VS Code), then:
-  - git add .
-  - git commit -m "Add interactive refill station map"
-  - git push origin feature/add-new-section
-
-4. Create Pull Request on GitHub
-
-5. Deploy: Settings > Pages > Deploy from main branch
-```
-
 ---
 
 ## Live Demo:
